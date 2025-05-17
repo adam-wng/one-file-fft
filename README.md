@@ -1,8 +1,8 @@
 # One-file-FFT
 
-As much as this makes me sound like a cock, I've found myself to write code just as fast in C++ as python. In many of my data science projects, I've been forced to do part of my analysis in C++ due to sheer size of the datasets I'm working with. However, I've begun to find it incredibly annoying to constantly be porting between C++ and Python to answer a single question.
+As much as this makes me sound overly pretentious, I've found myself to write code just as fast in C++ as python. In many of my data science projects, I've been forced to do part of my analysis in C++ due to sheer size of the datasets I'm working with. However, I've begun to find it incredibly annoying to constantly be porting between C++ and Python to answer a single question.
 
-I coded this single header file to minimize the amount of time spent porting between the two, because I couldn't be arsed to come up with and remember a consistent file sharing strategy. So here is a FFT that can be included into any project by importing it as a header. I've decided to upload this since surprisingly neither ChatGPT nor copilot were able to successfully implement this for me at the time of writing, so hopefully this will save some time for somebody else who can't be bothered to install a proper fft library.
+I coded this single header file to minimize the amount of time spent porting between the two, because I couldn't be bothered to install a proper fft library nor come up with and remember a consistent file sharing strategy. So here is a FFT that can be included into any project by importing it as a header. I've decided to upload this since surprisingly neither ChatGPT nor copilot were able to successfully implement this for me at the time of writing.
 
 ## FFT
 The FFT is implemented using the Bluestein algorithm that calls the 2**n recursive algorithm. There are faster ways of doing this, but it is theoretically O(nlogn), which I have found to be good enough for my purposes. 
